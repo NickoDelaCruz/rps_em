@@ -3,10 +3,16 @@ require('pry')
 require('rps')
 
 describe('#RPS') do
-  #describe('#wins') do
+  describe('#wins') do
     it("returns true if rock is the object and scissors is the argument") do
-      game = RPS.new("rock")
-      expect(game.wins?("rock", "scissors")).to(eq(true))
+      player1 = RPS.new("rock")
+      expect(player1.wins?("scissors")).to(eq(true))
     end
-  #end
+
+    it("returns true or false for rock object") do
+      player1 = RPS.new("rock")
+      expect(player1.wins?("paper")).to(eq(false))
+    end
+
+  end
 end

@@ -1,9 +1,15 @@
 class RPS
-  def initialize(game)
-    @game = game
+  def initialize(player1)
+    @player1 = player1
   end
 
-  def wins?(first, second)
-    @game == "rock" && second == "scissors"
-  end
+  def wins?(second)
+    # if @game == "rock" && second == "rock"
+    #   false
+    # elsif @game == "rock" && second == "paper"
+    #   false
+    # elsif
+    @player1 == "rock" && second == "scissors"
+
+   end
 end
