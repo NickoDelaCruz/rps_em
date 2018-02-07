@@ -35,6 +35,5 @@ describe('#RPS') do
     end
 
 
-
   end
 end
