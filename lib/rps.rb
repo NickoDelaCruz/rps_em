@@ -8,11 +8,11 @@ class Player
   end
 
   def wins?(second)
-    if @choice == "rock" && second == "rock"
-      false
-    elsif @choice == "rock" && second == "paper"
-      false
-    else @choice == "rock" && second == "scissors"
+    if @choice == "rock" && second == "scissors"
+      true
+    elsif @choice == "paper" && second == "rock"
+      true
+    elsif @choice == "scissors" && second == "paper"
       true
     end
 
