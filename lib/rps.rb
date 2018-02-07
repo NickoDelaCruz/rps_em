@@ -14,14 +14,10 @@ class Player
       true
     elsif @choice == "scissors" && second == "paper"
       true
+    elsif @choice == second
+      false
     end
 
-    # if @player1 == "paper" && second == "scissors"
-    #   false
-    # elsif @player1 == "paper" && second == "paper"
-    #   false
-    # else @player1 == "paper" && second == "rock"
-    # end
   end
 
 end

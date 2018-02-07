@@ -28,6 +28,13 @@ describe('#RPS') do
       expect(player2.wins?(player1.choice)).to(eq(true))
     end
 
+    it("returns false if players tie") do
+      player1 = Player.new("paper")
+      player2 = Player.new("paper")
+      expect(player2.wins?(player1.choice)).to(eq(false))
+    end
+
+
 
   end
 end
